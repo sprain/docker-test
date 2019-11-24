@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  php:
+    container_name: docker-test-php
+    build: docker/php
+    ports:
+      - '9999:80'
+    volumes:
+      - .:/var/www/html
